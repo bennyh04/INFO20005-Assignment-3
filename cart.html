@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - Her Little Patisserie</title>
+    <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+    <header>
+        <h1 class="name" onclick="window.location.href='index.html'">Her Little Patisserie</h1>
+        <img src="images/logo.png" class="logo" onclick="window.location.href='index.html'"/>
+    </header>
+
+    <main class="cart">
+        <a href="products.html" class="back-button">← Back to Products</a>
+        <h1>Your Cart</h1>
+
+        <div class="cart-item" data-price="10.50">
+            <img src="images/carrot cake.png" alt="Carrot Cake (slice)" />
+            <div class="cart-info">
+                <h2>Carrot Cake (slice)</h2>
+                <p>$<span class="unit-price">10.50</span></p>
+                <div class="quantity">
+                    <button class="decrement">-</button>
+                    <span class="qty">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="images/red velvet slice.png" alt="Red Velvet Cake (slice)" />
+            <div class="cart-info">
+                <h2>Red Velvet Cake (slice)</h2>
+                <p>$<span class="unit-price">10.50</span></p>
+                <div class="quantity">
+                    <button class="decrement">-</button>
+                    <span class="qty">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+
+        <p class="note">Your order must be at least $10.00 to qualify for a successful order.</p>
+
+        <div class="subtotal">
+            <h3>Total: $<span id="total-price">0.00</span></h3>
+            <button class="checkout" onclick="window.location.href='checkout.html'">Proceed To Checkout</button> 
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Her Little Patisserie</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiramisu - Her Little Patisserie</title>
+    <link rel="stylesheet" href="items.css">
+</head>
+<body>
+    <header>
+        <h1 class="name" onclick="window.location.href='index.html'">Her Little Patisserie</h1>
+        <div class="cart-icon" onclick="window.location.href='cart.html'">
+            🛒
+        </div>
+    </header>
+
+    <main>
+        <section class="item-page">
+            <a href="products.html" class="close-button">✕</a>
+            <section>
+                <div class="image-container">
+                    <img src="images/tiramisu.png" alt="Tiramisu">
+                </div>
+                <div class="details-container">
+                    <h1>Tiramisu</h1>
+                    <p class="description">
+                        A classic Italian dessert made with rich mascarpone cheese, fluffy ladyfingers,
+                        and a delicate espresso-liquor syrup, dusted with unsweetened cocoa powder.
+                    </p>
+                    <p class="price">$<span id="unit-price">14.00 (unit price)</span></p>
+
+                    <div class="quantity">
+                        <button class="decrease">−</button>
+                        <span id="quantity">1</span>
+                        <button class="increase">+</button>
+                    </div>
+
+                    <p class="price">Total: $<span id="total-price">14.00</span></p>
+
+                    <button class="add-to-cart" onclick="window.location.href='products.html'">Add To Cart</button>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="items.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+/* [items].html - items pages */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 20px 20px;
+}
+
+body {
+    font-family: 'DM serif text', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f0;
+    color: #222;
+}
+
+.name {
+    font-size: 50px;
+    margin: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    font-size: 28px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.item-page {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 60px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.image-container img {
+    width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.details-container {
+    max-width: 500px;
+}
+
+.details-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.quantity button {
+    background-color: #f0e4e4;
+    border: none;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: #ebb6b6;
+    border: none;
+    font-size: 16px;
+    padding: 12px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #e29b9b;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    background-color: #ffcbcb;
+    padding: 4px 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #e4cccc;
+}
+
+
+/* Responsive layout fixes */
+@media screen and (max-width: 768px) {
+    .item-page {
+        max-width: 90%;
+        padding: 20px;
+        margin: 40px auto;
+    }
+
+    .image-container img {
+        width: 80%;
+        margin-top: 40px;
+        height: auto;
+    }
+
+    .details-container h1 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .quantity {
+        gap: 8px;
+    }
+
+    .quantity button {
+        width: 28px;
+        height: 28px;
+        font-size: 18px;
+    }
+
+    .add-to-cart {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+
+    .close-button {
+        top: 20px;
+        right: 20px;
+        font-size: 20px;
+        padding: 2px 8px;
+        position: absolute;
+        z-index: 10;
+    }
+}
